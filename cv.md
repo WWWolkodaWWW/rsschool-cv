@@ -18,3 +18,8 @@
 ## _**Education**_
 ## _**Courses**_
 ## _**Languages**_
+
+- English **(B2)**. TGLS Direct Test of English Certificate #00335666
+- Russian **(C)**
+- Ukrainian **(C)**
+- Polish **(B1)**
