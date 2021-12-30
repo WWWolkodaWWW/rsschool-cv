@@ -31,3 +31,28 @@
 		}
 	}
 }
+
+.ico {
+	&:hover {
+		filter: invert(71%) sepia(42%) saturate(759%) hue-rotate(39deg) brightness(87%) contrast(85%);
+	}
+}
+.about-me-ico {
+}
+
+.skill-ico {
+	height: 30px;
+	padding-right: 15px;
+}
+
+.progress-bar {
+	height: 10px;
+	background-color: $color-primary;
+	display: block;
+	margin-top: 5px;
+
+	&::before {
+		@include progress-bar ($width: 100%, $index: 0);
+		background-color: $color-primary-light;
+	}
+}

@@ -1,0 +1,50 @@
+.languages {
+
+	&__title {
+	}
+
+	&__wrapper {
+		padding-top: 30px;
+	}
+}
+
+.language-card {
+	border-radius: 20px;
+	position: relative;
+	padding: 30px 0 0 0;
+
+	&__level {
+		position: absolute;
+		top: 52%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: none;
+	}
+
+	&__title {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.language {
+	&__image {
+		border-radius: 20px;
+		width: 100%;
+
+		&:hover {
+			cursor: pointer;
+			filter: brightness(0.5);
+		}
+	}
+}
+
+.language-card:hover > .language-card__title {
+	display: none;
+}
+
+.language-card:hover > .language-card__level {
+	display: block;
+}

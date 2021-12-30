@@ -1,7 +1,14 @@
+@import "base/normalize";
 @import "abstract/constants";
 @import "abstract/mixins";
+@import "abstract/placeholders";
 
 @import "base/base";
 
 @import "components/header";
 @import "components/header-navigation";
+@import "components/icons";
+@import "components/about-me";
+@import "components/skills";
+@import "components/languages";
+@import "components/education";

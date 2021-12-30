@@ -1,0 +1,45 @@
+.about-me {
+	&__wrapper {
+		padding: 0 10px;
+		justify-content: space-around;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__title {
+		color: $color-primary-light;
+		padding-top: 140px;
+		text-align: center;
+		padding-bottom: 60px;
+	}
+
+	&__name {
+		@include font($size: 3.5rem, $weight: 500, $height: 6rem, $space: 0.1rem);
+		color: $color-additional;
+	}
+
+	&__image {
+		max-width: 450px;
+	}
+}
+
+
+.about-me-contacts {
+	display: flex;
+	justify-content: center;
+}
+.contacts {
+	&__link {
+		padding-right: 50px;
+		@extend %transition;
+		&:nth-child(3) {
+			padding-right: 0;
+		}
+	}
+}
+

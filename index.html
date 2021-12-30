@@ -8,7 +8,10 @@
 	<link rel="stylesheet" href="./sass/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header class="header dark-style">
@@ -40,14 +43,159 @@
 
 	<main class="main">
 
-		<section class="about-me">
-			<div class="wrapper about-me__wrapper">
+		<section class="about-me dark-style" id="about-me">
+			<div class="wrapper about-me__wrapper layout-2-columns">
 				<div class="about-me__content">
 					<h1 class="about-me__title">Hello, <span class="about-me__name">I`m Iuliia Makarenko</span>. Graphic designer, illustrator and junior Front-End developer</h1>
+					<ul class="about-me-contacts">
+						<li class="contacts__link">
+							<a href="mailto:makarenko_iuliia@mail.ru"><img src="./assets/svg/mail.svg" alt="mail" class="ico about-me-ico"></a>
+						</li>
+						<li class="contacts__link">
+							<a href="tel:+48537187966"><img src="./assets/svg/tel.svg" alt="phone" class="ico about-me-ico"></a>
+						</li>
+						<li class="contacts__link">
+							<a href="#" target="_blank"><img src="./assets/svg/git.svg" alt="git" class="ico about-me-ico"></a>
+						</li>
+					</ul>
+				</div>
+				<img src="./assets/img/foto-main.png" alt="about-me__image" class="about-me__image">
+			</div>
+		</section>
+
+		<section class="skills light-style" id="skills">
+			<div class="wrapper">
+				<h2 class="skills__title">Skills</h2>
+				<div class="skills__wrapper">
+					<ul class="skills-list">
+						<li class="skills-list__item">
+							<div class="skills-list__line">
+								<img src="./assets/img/html.png" alt="html" class="ico skill-ico">
+								<span>HTML5</span>
+							</div>							
+							<div class="skills-list__line">
+								<img src="./assets/img/css.png" alt="css" class="ico skill-ico">
+								<span>CSS</span>
+							</div>
+							<div class="skills-list__line">
+								<img src="./assets/img/sass-logo.png" alt="sass" class="ico skill-ico">
+								<span>Sass</span>
+							</div>	
+							<span class="progress-bar"></span>
+						</li>
+						<li class="skills-list__item">
+							<div class="skills-list__line">
+								<img src="./assets/img/git.png" alt="git" class="ico skill-ico">
+								<span>Git</span>
+							</div>
+							<span class="progress-bar"></span>
+						</li>
+						<li class="skills-list__item">
+							<div class="skills-list__line">
+								<img src="./assets/img/js.png" alt="JS" class="ico skill-ico">
+								<span>JavaScript basics</span>
+							</div>
+							<span class="progress-bar"></span>
+						</li>
+						<li class="skills-list__item">
+							<div class="skills-list__line">
+								<img src="./assets/img/py.png" alt="Python" class="ico skill-ico">
+								<span>Python basics</span>
+							</div>				
+							<span class="progress-bar"></span>
+						</li>
+						<li class="skills-list__item">
+							<div class="skills-list__line">
+								<img src="./assets/img/ps.png" alt="Photoshop" class="ico skill-ico">
+								<span>Photoshop</span>
+							</div>
+							<span class="progress-bar"></span>
+						</li>
+						<li class="skills-list__item">
+							<div class="skills-list__line">
+								<img src="./assets/img/ai.png" alt="Illustrator" class="ico skill-ico">
+								<span>Illustrator</span>
+							</div>
+							<span class="progress-bar"></span>
+						</li>
+						<li class="skills-list__item">
+							<div class="skills-list__line">
+								<img src="./assets/img/Cdr.png" alt="CorelDraw" class="ico skill-ico">
+								<span>CorelDraw</span>
+							</div>
+							<span class="progress-bar"></span>
+						</li>
+						<li class="skills-list__item">
+							<div class="skills-list__line">
+								<img src="./assets/img/id.png" alt="InDesign" class="ico skill-ico">
+								<span>InDesign</span>
+							</div>
+							<span class="progress-bar"></span>
+						</li>
+						<li class="skills-list__item">
+							<div class="skills-list__line">
+								<img src="./assets/img/fus.png" alt="Autodesk" class="ico skill-ico">
+								<span>Autodesk Fusion 360</span>
+							</div>
+							<span class="progress-bar"></span>
+						</li>
+						<li class="skills-list__item">
+							<div class="skills-list__line">
+								<img src="./assets/img/fig.png" alt="Figma" class="ico skill-ico">
+								<span>Figma</span>
+							</div>
+							<span class="progress-bar"></span>
+						</li>
+						<li class="skills-list__item">
+							<div class="skills-list__line">
+								<img src="./assets/img/av.png" alt="Avocode" class="ico skill-ico">
+								<span>Avocode</span>
+							</div>
+							<span class="progress-bar"></span>
+						</li>
+					</ul>
+				</div>
+			</div> 
+		</section>
+
+		<section class="languages dark-style" id="languages">
+			<div class="wrapper">
+				<h2 class="languages__title">Languages</h2>
+				<div class="languages__wrapper">
+					<div class="layout-2-columns">
+						<div class="language-card eng-card">
+							<img src="./assets/img/eng.jpg" alt="language-card__image" class="language__image">
+							<h3 class="language-card__level">B2</h3>
+							<h4 class="language-card__title">English</h4>
+						</div>
+						<div class="language-card rus-card">
+							<img src="./assets/img/rus.jpg" alt="language-card__image" class="language__image">
+							<h3 class="language-card__level">C</h3>
+							<h4 class="language-card__title">Russian</h4>
+						</div>
+						<div class="language-card ukr-card">
+							<img src="./assets/img/ukr.jpg" alt="language-card__image" class="language__image">
+							<h3 class="language-card__level">C</h3>
+							<h4 class="language-card__title">Ukrainian</h4>
+						</div>
+						<div class="language-card pol-card">
+							<img src="./assets/img/pol.jpg" alt="language-card__image" class="language__image">
+							<h3 class="language-card__level">B1</h3>
+							<h4 class="language-card__title">Polish</h4>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
-		<section class="skills"></section>
+
+		<section class="education light-style" id="education">
+			<div class="wrapper education__wrapper">
+				<h2 class="education__title">Education</h2>
+				<p class="education__text">Specialist degree <br> in Petro Tchaikovsky National Music Academy of Ukraine</p>
+				<span class="education__subtitle">Ukraine 2011</span>
+			</div>
+		</section>
+
 	</main>
 	
 </body>

@@ -1,0 +1,10 @@
+.education {
+	&__text {
+		padding-top: 60px;
+		@include font($size: 3rem, $height: 4rem, $space: 0.4rem);
+	}
+
+	&__subtitle {
+		@include font($size: 1.8rem, $height: 3.5rem, $space: 0.2rem);
+	}
+}
