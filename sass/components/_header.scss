@@ -1,0 +1,12 @@
+.header {
+	padding: 20px 0;
+	}
+
+.header__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 55px 10px 10px;
+	border-radius: 60px;
+	box-shadow: 0px 0px 10px $color-additional;
+}

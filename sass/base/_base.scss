@@ -1,0 +1,165 @@
+html {
+	font-size: 10px;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+}
+
+img {
+	display: block;
+}
+
+h1 {
+	@include font($size: 3rem, $weight: 400, $height: 4rem, $space: 0.4rem);
+
+	@include media-laptop {
+		@include font($size: 2.5rem, $weight: 400, $height: 3rem);
+	}
+
+	@include media-tablet {
+		@include font($size: 2.2rem, $weight: 400, $height: 3rem);
+	}
+
+	@include media-mobile-big-width {
+		@include font($size: 1.9rem, $height: 3.2rem, $space: 0.2rem);
+	}
+}
+
+h2 {
+	@extend %roboto;
+	@include font($size: 5rem, $weight: 300, $height: 6.7rem);
+	color: $color-additional;
+	position: relative;
+	&::after {
+		@include progress-bar($height: 3px, $width: 60%, $bottom: -15%, $index: 0);
+		background-color: $color-additional;
+
+		@include media-tablet {
+			@include progress-bar($height: 2px, $width: 50%, $bottom: -15%, $index: 0);
+		}
+	}
+
+	@include media-laptop {
+		@include font($size: 3.8rem, $weight: 300);
+	}
+
+	@include media-tablet {
+		@include font($size: 3.5rem, $weight: 300);
+	}
+
+	@include media-mobile-big-width {
+		@include font($size: 3rem, $height: 3.5rem, $weight: 300);
+	}
+}
+
+h3 {
+	@extend %roboto;
+	@include font($size: 10rem, $weight: 500, $height: 11rem, $space: 0.5rem);
+
+	@include media-laptop {
+		@include font($size: 8rem, $weight: 500);
+	}
+
+	@include media-tablet {
+		@include font($size: 6rem, $weight: 500);
+	}
+
+	@include media-mobile-big-width {
+		@include font($size: 3rem, $height: 3.5rem, $weight: 500, $space: 0.3rem);
+	}
+}
+
+h4 {
+	@extend %roboto;
+	@include font($size: 10rem, $weight: 500, $height: 11rem, $space: 0.5rem);
+
+	@include media-laptop {
+		@include font($size: 8rem, $weight: 500);
+	}
+
+	@include media-tablet {
+		@include font($size: 4.5rem, $weight: 500);
+	}
+
+	@include media-mobile-big-width {
+		@include font($size: 3.2rem, $height: 3.5rem, $weight: 500, $space: 0.3rem);
+	}
+}
+
+h5 {
+	@include font($size: 2.8rem);
+
+	@include media-tablet {
+		@include font($size: 2.4rem);
+	}
+
+	@include media-mobile-big-width {
+		@include font($size: 2rem, $height: 2.5rem);
+	}
+}
+
+h6 {
+	@include font($size: 2.2rem, $height:2.7rem);
+
+	@include media-laptop {
+		@include font($size: 1.8rem);
+	}
+
+	@include media-tablet {
+		@include font($size: 1.6rem);
+	}
+}
+
+section {
+	padding: 60px 0 100px 0;
+
+	@include media-laptop {
+		padding: 50px 0;
+	}
+
+	@include media-tablet {
+		padding: 30px 0 50px 0;
+	}
+
+	@include media-mobile-big-width {
+		padding: 18px 0 10px 0;
+	}
+}
+
+.wrapper {
+	max-width: $content-width;
+	margin: 0 auto;
+	@include media-laptop {
+		max-width: $laptop-width;
+		padding: 0 10px;
+	}
+}
+
+.dark-style {
+	background-color: $color-primary;
+	color: $color-additional-light;
+}
+
+.light-style {
+	background-color: $color-background-light;
+	color: $color-primary;
+}
+
+:hover {
+	@extend %transition;
+}
+
+.layout-2-columns {
+	@include columns ($width: 45%);
+
+	@include media-tablet {
+		@include columns ($width: 65%);
+		justify-content: center;
+	}
+}
+
+.layout-3-columns {
+	@include columns ($width: 30%);
+}

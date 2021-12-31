@@ -1,0 +1,37 @@
+.footer {
+	&__navigation {
+		padding: 38px 0;
+
+		@include media-laptop {
+			padding: 25px 0;
+		}
+	}
+}
+
+.footer-navigation {
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		@include font($size: 2rem, $weight: 300, $space: 0.2rem);
+
+		@include media-laptop {
+			@include font($size: 1.8rem, $weight: 300);
+		}
+
+		@media screen and (max-width: 530px) {
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			> * {
+				flex-basis: 45%;
+				text-align: center;
+			}
+			@include font($size: 1.8rem, $weight: 300, $height: 3.3rem, $space: 0.2rem);
+		}
+	}
+
+	&__link {
+		&:hover {
+			color: $color-additional;
+		}
+	}
+}
