@@ -1,0 +1,153 @@
+.projects {
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+	}
+
+	&__contacts {
+		display: flex;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+
+		@include media-tablet {
+			position: relative;
+			padding-top: 10px;
+		}
+	}
+
+	&__link {
+		margin-left: 10px;
+	}
+}
+
+.projects-container {
+	padding: 60px 0;
+
+	@include media-laptop {
+		padding: 30px 0;
+	}
+
+	@include media-tablet {
+		flex-direction: column;
+		align-items: center;
+		padding: 30px 0 0 0;
+	}
+
+	@include media-mobile-big-width {
+		padding: 15px 0 0 0;
+	}
+}
+.project-card {
+	display: flex;
+	flex-direction: column;	
+	background-color: $color-background-light;
+	padding-bottom: 20px;
+	color: $color-primary;
+	width: calc((100% - 50px) / 3);
+	align-items: center;
+
+	@include media-tablet {
+		margin-bottom: 10px;
+		width: calc(100vw - 468px);
+		min-width: 300px;
+		min-height: 300px;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		justify-content: flex-end;
+		flex-grow: 1;
+		padding: 20px 10px 0 10px;
+	}
+
+	&__description {
+		margin-bottom: 20px;
+	}
+}
+.project {
+	&__image {
+		width: 100%;
+	}
+}
+
+.slider {
+	background-color: $color-background-light;
+	text-align: center;
+	color: $color-primary;
+	display: flex;
+	flex-direction: column;
+
+	&__title {
+		@include font($size: 3rem, $height: 3.7rem);
+		padding: 10px 0;
+
+		@include media-laptop {
+			@include font($size: 2.5rem);
+		}
+
+		@include media-tablet {
+			@include font($size: 2rem);
+		}
+	}
+
+	&__image {
+		display: none;
+		width: 100%;
+
+		@media screen and (max-width: 516px) {
+			> img {
+				width: calc(100vw - 120px);
+				min-width: 300px;
+			}
+		}
+	}
+
+	&__navigation {
+		display: flex;
+		position: absolute;
+		bottom: 20px;
+		left: 33%;
+
+		@media screen and (max-width: 516px) {
+			left: 27%;
+		}
+
+		@include media-mobile-big-width {
+			left: 21%;
+		}
+	}
+}
+
+.active {
+	display: block;
+}
+
+.slider-container {
+	position: relative;
+}
+
+.slider-pagination {
+	height: 20px;
+	width: 20px;
+	background-color: $color-primary-light;
+	border-radius: 50%;
+	margin-right: 20px;
+	&:nth-child(5) {
+		margin-right: 0;
+	}
+	&:hover {
+		background-color: $color-primary;
+		@extend %transition;
+		cursor: pointer;
+	}
+
+	&:active {
+		background-color: $color-additional;
+	}
+}

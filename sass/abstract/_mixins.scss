@@ -1,0 +1,48 @@
+@mixin font ($size, $weight: 400, $height: calc(1.1 * $size), $space: normal, $style: normal) {
+	font-size: $size;
+	font-weight: $weight;
+	line-height: $height;
+	letter-spacing: $space;
+	font-style: $style;
+}
+
+@mixin columns ($width) {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	@include media-tablet {
+		flex-direction: column;
+	}
+
+	> * {
+		flex-basis: $width;
+	}
+}
+
+@mixin progress-bar ($content: '', $position: absolute, $width, $height: 10px, $bottom: 0, $left: 0, $index: 1) {
+	content: $content;
+	position: $position;
+	width: $width;
+	height: $height;
+	bottom: $bottom;
+	left: $left;
+	z-index: $index;
+}
+
+@mixin media-laptop {
+	@media (max-width: $laptop-width) { @content; }
+}
+
+@mixin media-tablet {
+	@media (max-width: $tablet-width) { @content; }
+}
+
+@mixin media-mobile-big-width {
+	@media (max-width: $mobile-big-width) { @content; }
+}
+
+@mixin media-mobile-small-width {
+	@media (max-width: $mobile-small-width) { @content; }
+}

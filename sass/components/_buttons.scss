@@ -1,0 +1,26 @@
+.button {
+	@include font($size: 2rem, $height: 2.5rem);
+	box-shadow: 0px 0px 12px $color-primary;
+	border-radius: 25px;
+	display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 4px 34px;
+	cursor: pointer;
+
+	&_colored {
+		background-color: $color-primary;
+		color: $color-primary-light;
+	}
+
+	&:hover {
+		box-shadow: 0px 0px 12px $color-additional;
+		background-color: $color-additional;
+	}
+
+	&:active {
+		box-shadow: 0px 0px 12px $color-additional;
+		color: $color-additional;
+		background-color: $color-primary;
+	}
+}
