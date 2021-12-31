@@ -1,0 +1,104 @@
+.projects {
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+	}
+
+	&__contacts {
+		display: flex;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+
+	&__link {
+		margin-left: 10px;
+	}
+}
+
+.projects-container {
+	padding: 60px 0;
+}
+.project-card {
+	display: flex;
+	flex-direction: column;	
+	background-color: $color-background-light;
+	padding-bottom: 20px;
+	color: $color-primary;
+	width: calc((100% - 50px) / 3);
+	align-items: center;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		justify-content: flex-end;
+		flex-grow: 1;
+		padding: 20px 10px 0 10px;
+	}
+
+	&__description {
+		margin-bottom: 20px;
+	}
+}
+.project {
+	&__image {
+		width: 100%;
+	}
+}
+
+.slider {
+	background-color: $color-background-light;
+	text-align: center;
+	color: $color-primary;
+	display: flex;
+	flex-direction: column;
+
+	&__title {
+		@include font($size: 3rem, $height: 3.7rem);
+		padding: 10px 0;
+	}
+
+	&__image {
+		display: none;
+		width: 100%;
+	}
+
+	&__navigation {
+		display: flex;
+		position: absolute;
+		bottom: 20px;
+		left: 33%;
+	}
+}
+
+.active {
+	display: block;
+}
+
+.slider-container {
+	position: relative;
+}
+
+.slider-pagination {
+	height: 20px;
+	width: 20px;
+	background-color: $color-primary-light;
+	border-radius: 50%;
+	margin-right: 20px;
+	&:nth-child(5) {
+		margin-right: 0;
+	}
+	&:hover {
+		background-color: $color-primary;
+		@extend %transition;
+		cursor: pointer;
+	}
+
+	&:active {
+		background-color: $color-additional;
+	}
+}

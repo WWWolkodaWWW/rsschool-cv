@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="./assets/svg/favicon.ico">
 	<title>CV_Makarenko_Iuliia</title>
 	<link rel="stylesheet" href="./libs/highlight/styles/atom-one-dark.min.css">
 	<link rel="stylesheet" href="./sass/style.css">
@@ -63,6 +64,8 @@
 				<img src="./assets/img/foto-main.png" alt="about-me__image" class="about-me__image">
 			</div>
 		</section>
+
+		<div class="parallax"></div>
 
 		<section class="skills light-style" id="skills">
 			<div class="wrapper">
@@ -236,7 +239,79 @@
 		</section>
 
 		<section class="projects dark-style" id="projects">
-
+			<div class="wrapper">
+				<h2 class="projects__title">Projects</h2>
+				<div class="projects__wrapper">
+					<div class="layout-3-columns projects-container">
+						<div class="project-card">
+							<a href="https://wwwolkodawww.github.io/rsschool-cv-old-projects/layout(restaurant)/">
+								<img src="./assets/img/lay-r.jpg" alt="project-card__image" class="project__image">
+							</a>
+							<div class="project-card__content">
+								<h6 class="project-card__description">create web page, strictly according to: Lambda restaurant layout  using flexboxes</h6>
+								<a href="https://wwwolkodawww.github.io/rsschool-cv-old-projects/layout(restaurant)/" target="_blank" class="button button_colored">See more</a>
+							</div>
+						</div>
+						<div class="project-card">
+							<a href="https://rolling-scopes-school.github.io/wwwolkodawww-JSFE2021Q3/museum/ " target="_blank">
+								<img src="./assets/img/mus.jpg" alt="project-card__image" class="project__image">
+							</a>
+							<div class="project-card__content">
+								<h6 class="project-card__description">create responsive web page, strictly according to: Museum layout using HTML, CSS, JS</h6>
+								<a href="https://rolling-scopes-school.github.io/wwwolkodawww-JSFE2021Q3/museum/ " target="_blank" class="button button_colored">See more</a>
+							</div>
+						</div>
+						<div class="project-card">
+							<a href="https://gracious-leakey-db04b3.netlify.app/" target="_blank">
+								<img src="./assets/img/projW.jpg" alt="project-card__image" class="project__image">
+							</a>				
+							<div class="project-card__content">
+								<h6 class="project-card__description">the first try in HTML/CSS after a month of on-line studying using flexboxes</h6>
+								<a href="https://gracious-leakey-db04b3.netlify.app/" target="_blank" class="button button_colored">See more</a>							</div>
+						</div>
+					</div>
+					<div class="slider">
+						<span class="slider__title">some of my artworks</span>
+						<div class="slider-container">
+							<div class="slider__image active">
+								<img src="./assets/img/01.jpg" alt="01">
+							</div>
+							<div class="slider__image">
+								<img src="./assets/img/02.jpg" alt="02">
+							</div>
+							<div class="slider__image">
+								<img src="./assets/img/03.jpg" alt="03">
+							</div>
+							<div class="slider__image">
+								<img src="./assets/img/04.jpg" alt="04">
+							</div>
+							<div class="slider__image">
+								<img src="./assets/img/05.jpg" alt="05">
+							</div>
+							<div class="slider__navigation">
+								<span class="slider-pagination"></span>
+								<span class="slider-pagination"></span>
+								<span class="slider-pagination"></span>
+								<span class="slider-pagination"></span>
+								<span class="slider-pagination"></span>
+							</div>
+						</div>
+					</div>
+					<ul class="projects__contacts">
+						<li class="projects__link">
+							<a href="https://www.instagram.com/wwwolkodaww/" target="_blank"><img src="./assets/svg/insta.svg" alt="insta" class="ico projects-ico"></a>
+						</li>
+						<li class="projects__link">
+							<a href="https://www.behance.net/wolkodaws_creations" target="_blank"><img src="./assets/svg/be.svg" alt="behance" class="ico projects-ico"></a>
+						</li>
+						<li class="projects__link">
+							<a href="https://www.deviantart.com/wwwolkodawww/gallery" target="_blank"><img src="./assets/svg/deva.png" alt="devianart" class="ico projects-ico"></a>
+						</li>
+					</ul>
+				</div>
+				
+				
+			</div>
 		</section>
 
 		<section class="examples light-style">
@@ -250,7 +325,7 @@
 			let lowNumber = +arr[0]
 			let highNumber = +arr[0]
 			for(let i of arr){
-				if(+i < lowNumber) lowNumber = +i    
+				if(+i &lt; lowNumber) lowNumber = +i    
 				console.log(lowNumber)    
 				if(+i > highNumber) highNumber = +i    
 				console.log(highNumber)
