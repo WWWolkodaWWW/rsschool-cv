@@ -725,12 +725,91 @@ section {
     display: none;
   }
 }
+@media (max-width: 1024px) {
+  .header-navigation__list {
+    flex-direction: column;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 5rem;
+    letter-spacing: 0.2rem;
+    font-style: normal;
+    position: fixed;
+    margin-top: 195px;
+    margin-left: 20px;
+    top: 0;
+    left: 0;
+    background-color: #171628;
+    width: 30%;
+  }
+}
+@media (max-width: 768px) {
+  .header-navigation__list {
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 6rem;
+    letter-spacing: 0.2rem;
+    font-style: normal;
+    margin-top: 130px;
+    margin-left: 0;
+    padding: 100px 70px 75px;
+    top: 0;
+    left: 0;
+    background-image: url(../../assets/img/eyes_transparency.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-blend-mode: color-dodge;
+    width: 100%;
+  }
+}
+@media (max-width: 420px) {
+  .header-navigation__list {
+    font-size: 3.2rem;
+    font-weight: 300;
+    line-height: 6rem;
+    letter-spacing: 0.2rem;
+    font-style: normal;
+    padding: 100px 50px 70px;
+  }
+}
 .header-navigation__link {
   color: #CBCBCB;
   padding-left: 28px;
 }
+@media (max-width: 1024px) {
+  .header-navigation__link {
+    padding-left: 0;
+  }
+}
 .header-navigation__link:hover {
   color: #7EB92D;
+}
+@media (max-width: 1024px) {
+  .header-navigation__link {
+    position: relative;
+  }
+  .header-navigation__link:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(../assets/svg/arrow.svg);
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 26px;
+    transform: translate(0, 140%) rotate(90deg);
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__navigation_mobile {
+    visibility: hidden;
+    transition: 0.3s all linear;
+  }
+}
+
+.active {
+  visibility: visible;
 }
 
 .logo:hover {
@@ -742,6 +821,16 @@ section {
 }
 .logo-object:hover {
   filter: invert(71%) sepia(42%) saturate(759%) hue-rotate(39deg) brightness(87%) contrast(85%);
+}
+@media (max-width: 1024px) {
+  .logo-object {
+    height: 70px;
+  }
+}
+@media (max-width: 420px) {
+  .logo-object {
+    height: 50px;
+  }
 }
 
 .humburger {

@@ -8,6 +8,14 @@
 	&:hover {
 		filter: invert(71%) sepia(42%) saturate(759%) hue-rotate(39deg) brightness(87%) contrast(85%);
 	}
+
+	@include media-laptop {
+		height: 70px;
+	}
+
+	@include media-mobile-big-width {
+		height: 50px;
+	}
 }
 
 .humburger {
