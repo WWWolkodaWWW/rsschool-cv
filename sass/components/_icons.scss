@@ -1,7 +1,3 @@
-.humburger {
-	display: none;
-}
-
 .logo {
 	&:hover {
 		cursor: pointer;
@@ -15,26 +11,52 @@
 }
 
 .humburger {
+	display: none;
+	width: 40px;
+	height: 33px;
+	position: relative;
+	cursor: pointer;
+	@include media-laptop {
+		display: inline-block;
+	}
 
 	&__line {
+		display: block;
+		width: 100%;
+		height: 3px;
+		background-color: $color-primary-light;
+		position: absolute;
+		left: 0;
+		@extend %transition;
 
 		&_first {
+			top: 0;
 		}
 
-		&_second {
-		}
-
+		&_second,
 		&_third {
+			top: 50%;
+			transform: translateY(-50%);
 		}
 
 		&_fourth {
+			bottom: 0;
 		}
 	}
+}
+
+._active > .humburger__line .humburger__line_first,
+._active > .humburger__line .humburger__line_fourth {
+	display: none;
 }
 
 .ico {
 	&:hover {
 		filter: invert(71%) sepia(42%) saturate(759%) hue-rotate(39deg) brightness(87%) contrast(85%);
+	}
+
+	@include media-laptop {
+		height: 30px;
 	}
 }
 
@@ -49,12 +71,24 @@
 	display: block;
 	margin-top: 5px;
 
+	@include media-tablet {
+		height: 30px;
+	}
+
 	&::before {
 		@include progress-bar ($width: 100%, $index: 0);
 		background-color: $color-primary-light;
+
+		@include media-tablet {
+			@include progress-bar ($width: 100%, $height:30px, $index: 0);
+		}
 	}
 }
 
 .contacts-ico {
 	height: 30px;
+
+	@include media-mobile-big-width {
+		height: 20px;
+	}
 }

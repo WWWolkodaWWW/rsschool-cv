@@ -1,10 +1,10 @@
 .languages {
-
-	&__title {
-	}
-
 	&__wrapper {
 		padding-top: 30px;
+
+		@include media-tablet {
+			padding-top: 0;
+		}
 	}
 }
 
@@ -13,12 +13,26 @@
 	position: relative;
 	padding: 30px 0 0 0;
 
+	@include media-tablet {
+		max-width: calc((100vw - 100px) / 2);
+		min-width: 180px;
+	}
+
+	@include media-mobile-big-width {
+		padding: 15px 0 0 0;
+	}
+
 	&__level {
 		position: absolute;
 		top: 52%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		display: none;
+
+		@media screen and (max-width: 1024px) {
+			display: block;
+			top: 75%;
+		}
 	}
 
 	&__title {
@@ -33,6 +47,13 @@
 	&__image {
 		border-radius: 20px;
 		width: 100%;
+
+		@media screen and (min-width: 1025px) {
+			&:hover {
+				cursor: pointer;
+				filter: brightness(0.5);
+			}
+		}
 
 		&:hover {
 			cursor: pointer;

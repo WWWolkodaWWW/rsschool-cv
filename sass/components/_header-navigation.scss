@@ -1,11 +1,11 @@
 .header-navigation {
-	@include media-laptop {
-		display: none;
-	}
-
 	&__list {
 		display: flex;
 		@include font($size: 2rem, $weight: 300, $space: 0.2rem);
+
+		@include media-laptop {
+			display: none;
+		}
 	}
 
 	&__link {
