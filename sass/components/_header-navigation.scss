@@ -1,0 +1,81 @@
+.header-navigation {
+	
+	&__list {
+		display: flex;
+		@include font($size: 2rem, $weight: 300, $space: 0.2rem);
+
+		@include media-laptop {
+			display: none;
+		}
+
+		@include media-laptop {
+			flex-direction: column;
+			@include font($size: 3rem, $weight: 300, $height: 5rem, $space: 0.2rem);
+			position: fixed;
+			margin-top: 195px;
+			margin-left: 20px;
+			top: 0;
+			left: 0;
+			background-color: $color-primary;
+			width: 30%;
+		}
+		@include media-tablet {
+			@include font($size: 4rem, $weight: 300, $height: 6rem, $space: 0.2rem);
+			margin-top: 130px;
+			margin-left: 0;
+			padding: 100px 70px 75px;
+			top: 0;
+			left: 0;
+			background-image: url(../../assets/img/eyes_transparency.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			background-blend-mode: color-dodge;
+			width: 100%;
+		}
+		@include media-mobile-big-width {
+			@include font($size: 3.2rem, $weight: 300, $height: 6rem, $space: 0.2rem);
+			padding: 100px 50px 70px;
+			
+		}
+	}
+
+	&__link {
+		color: $color-primary-light;
+		padding-left: 28px;
+
+		@include media-laptop {
+			padding-left: 0;
+		}
+
+		&:hover {
+			color: $color-additional;
+		}
+
+		@include media-laptop {
+			position: relative;
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				background-image: url(../assets/svg/arrow.svg);
+				background-repeat: no-repeat;
+				height: 15px;
+				width: 26px;
+				transform: translate(0, 140%) rotate(90deg);
+			}
+		}
+	}
+}
+
+.header__navigation_mobile {
+	@include media-laptop {
+		visibility: hidden;
+		transition: 0.3s all linear;
+	}
+}
+
+.active {
+	visibility: visible;
+}

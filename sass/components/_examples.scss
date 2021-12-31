@@ -1,0 +1,20 @@
+.examples__wrapper {
+	padding-top: 60px;
+
+	@include media-laptop {
+		padding-top: 30px;
+	}
+}
+
+code {
+	font-size: 2rem;
+
+
+	@include media-tablet {
+		font-size: 1.5rem;
+	}
+	
+	@include media-mobile-small-width {
+		font-size: 0.9rem;
+	}
+}
