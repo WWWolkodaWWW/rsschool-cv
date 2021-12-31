@@ -541,9 +541,9 @@ h4 {
 }
 @media (max-width: 768px) {
   h4 {
-    font-size: 6rem;
+    font-size: 4.5rem;
     font-weight: 500;
-    line-height: 6.6rem;
+    line-height: 4.95rem;
     letter-spacing: normal;
     font-style: normal;
   }
@@ -1451,6 +1451,16 @@ section {
 .experience__subtitle {
   padding: 60px 0 20px 0;
 }
+@media (max-width: 1024px) {
+  .experience__subtitle {
+    padding: 30px 0 10px 0;
+  }
+}
+@media (max-width: 420px) {
+  .experience__subtitle {
+    padding: 15px 0 10px 0;
+  }
+}
 
 .esperience-list__item {
   font-size: 1.8rem;
@@ -1458,6 +1468,24 @@ section {
   line-height: 2.5rem;
   letter-spacing: normal;
   font-style: normal;
+}
+@media (max-width: 768px) {
+  .esperience-list__item {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: normal;
+    font-style: normal;
+  }
+}
+@media (max-width: 420px) {
+  .esperience-list__item {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.65rem;
+    letter-spacing: normal;
+    font-style: normal;
+  }
 }
 
 .projects__wrapper {
@@ -1561,13 +1589,38 @@ section {
 .examples__wrapper {
   padding-top: 60px;
 }
+@media (max-width: 1024px) {
+  .examples__wrapper {
+    padding-top: 30px;
+  }
+}
 
 code {
   font-size: 2rem;
 }
+@media (max-width: 768px) {
+  code {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 320px) {
+  code {
+    font-size: 0.9rem;
+  }
+}
 
 .contacts-list {
   padding-top: 60px;
+}
+@media (max-width: 1024px) {
+  .contacts-list {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 420px) {
+  .contacts-list {
+    padding-top: 15px;
+  }
 }
 .contacts-list__item {
   display: flex;
@@ -1583,6 +1636,34 @@ code {
 }
 .contacts-list__link:hover {
   color: #7EB92D;
+}
+@media (max-width: 1024px) {
+  .contacts-list__link {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 2.75rem;
+    letter-spacing: normal;
+    font-style: normal;
+  }
+}
+@media (max-width: 768px) {
+  .contacts-list__link {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    letter-spacing: normal;
+    font-style: normal;
+  }
+}
+@media (max-width: 420px) {
+  .contacts-list__link {
+    padding-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.98rem;
+    letter-spacing: normal;
+    font-style: normal;
+  }
 }
 
 .footer {
@@ -1603,11 +1684,39 @@ code {
   background-color: #7EB92D;
   padding: 14px 0;
 }
+@media (max-width: 1024px) {
+  .course-info {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.98rem;
+    letter-spacing: normal;
+    font-style: normal;
+  }
+}
+@media (max-width: 420px) {
+  .course-info {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.54rem;
+    letter-spacing: normal;
+    font-style: normal;
+  }
+}
 .course-info__school-logo {
   height: 70px;
 }
 .course-info__school-logo:hover {
   filter: invert(91%) sepia(28%) saturate(1%) hue-rotate(314deg) brightness(92%) contrast(76%);
+}
+@media (max-width: 1024px) {
+  .course-info__school-logo {
+    height: 50px;
+  }
+}
+@media (max-width: 420px) {
+  .course-info__school-logo {
+    height: 30px;
+  }
 }
 
 .git-footer {
@@ -1616,6 +1725,15 @@ code {
 }
 .git-footer:hover {
   color: #CBCBCB;
+}
+@media (max-width: 420px) {
+  .git-footer {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.76rem;
+    letter-spacing: normal;
+    font-style: normal;
+  }
 }
 .git-footer > img {
   padding-right: 10px;
@@ -1627,6 +1745,11 @@ code {
 .footer__navigation {
   padding: 38px 0;
 }
+@media (max-width: 1024px) {
+  .footer__navigation {
+    padding: 25px 0;
+  }
+}
 
 .footer-navigation__list {
   display: flex;
@@ -1636,6 +1759,30 @@ code {
   line-height: 2.2rem;
   letter-spacing: 0.2rem;
   font-style: normal;
+}
+@media (max-width: 1024px) {
+  .footer-navigation__list {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.98rem;
+    letter-spacing: normal;
+    font-style: normal;
+  }
+}
+@media screen and (max-width: 530px) {
+  .footer-navigation__list {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3.3rem;
+    letter-spacing: 0.2rem;
+    font-style: normal;
+  }
+  .footer-navigation__list > * {
+    flex-basis: 45%;
+    text-align: center;
+  }
 }
 .footer-navigation__link:hover {
   color: #7EB92D;

@@ -320,16 +320,16 @@
 				<div class="examples__wrapper">
 <pre>
 	<code>
-		function highAndLow(numbers){
-			let arr = numbers.split(' ')
-			let lowNumber = +arr[0]
-			let highNumber = +arr[0]
-			for(let i of arr){
-				if(+i &lt; lowNumber) lowNumber = +i    
-				console.log(lowNumber)    
-				if(+i > highNumber) highNumber = +i    
-				console.log(highNumber)
-			}  
+	function highAndLow(numbers){
+		let arr = numbers.split(' ')
+		let lowNumber = +arr[0]
+		let highNumber = +arr[0]
+		for(let i of arr){
+			if(+i &lt; lowNumber) lowNumber = +i    
+			console.log(lowNumber)    
+			if(+i > highNumber) highNumber = +i    
+			console.log(highNumber)
+		}  
 		return `${highNumber} ${lowNumber}`
 	}
 	</code>

@@ -80,7 +80,7 @@ h4 {
 	}
 
 	@include media-tablet {
-		@include font($size: 6rem, $weight: 500);
+		@include font($size: 4.5rem, $weight: 500);
 	}
 
 	@include media-mobile-big-width {
