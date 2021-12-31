@@ -1,0 +1,19 @@
+.footer {
+	&__navigation {
+		padding: 38px 0;
+	}
+}
+
+.footer-navigation {
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		@include font($size: 2rem, $weight: 300, $space: 0.2rem);
+	}
+
+	&__link {
+		&:hover {
+			color: $color-additional;
+		}
+	}
+}

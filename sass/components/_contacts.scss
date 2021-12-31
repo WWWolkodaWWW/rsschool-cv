@@ -1,0 +1,15 @@
+.contacts-list {
+	padding-top: 60px;
+	&__item {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__link {
+		padding-bottom: 15px;
+		@include font($size: 3rem, $weight: 500);
+		&:hover {
+			color: $color-additional;
+		}
+	}
+}

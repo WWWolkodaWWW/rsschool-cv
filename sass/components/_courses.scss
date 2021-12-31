@@ -1,0 +1,21 @@
+.courses-list {
+	padding-top: 60px;
+	&_colored {
+		color: $color-additional;
+	}
+
+	&__item {
+		padding-bottom: 15px;
+		@include font($size: 2.6rem);
+	}
+
+	&__subtitle {
+		@include font($size: 1.5rem);
+	}
+
+	&__link {
+		&:hover {
+			color: $color-additional;
+		}
+	}
+}
