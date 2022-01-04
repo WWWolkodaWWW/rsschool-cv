@@ -1845,7 +1845,7 @@ code {
   justify-content: space-around;
   color: #171628;
   background-color: #7EB92D;
-  padding: 14px 0;
+  padding: 12px 0;
 }
 @media (max-width: 1024px) {
   .course-info {

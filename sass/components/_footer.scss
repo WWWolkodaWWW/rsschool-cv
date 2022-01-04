@@ -10,7 +10,7 @@
 	justify-content: space-around;
 	color: $color-primary;
 	background-color: $color-additional;
-	padding: 14px 0;
+	padding: 12px 0;
 
 	@include media-laptop {
 		@include font($size: 1.8rem);
