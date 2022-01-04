@@ -720,9 +720,9 @@ section {
   letter-spacing: 0.2rem;
   font-style: normal;
 }
-@media (max-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .header-navigation__list {
-    display: none;
+    visibility: visible;
   }
 }
 @media (max-width: 1024px) {
@@ -740,6 +740,7 @@ section {
     left: 0;
     background-color: #171628;
     width: 30%;
+    z-index: 5;
   }
 }
 @media (max-width: 768px) {
@@ -754,7 +755,7 @@ section {
     padding: 100px 70px 75px;
     top: 0;
     left: 0;
-    background-image: url(../../assets/img/eyes_transparency.png);
+    background-image: url(../assets/img/eyes_transparency.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -806,10 +807,6 @@ section {
     visibility: hidden;
     transition: 0.3s all linear;
   }
-}
-
-.active {
-  visibility: visible;
 }
 
 .logo:hover {
@@ -864,9 +861,21 @@ section {
   bottom: 0;
 }
 
-._active > .humburger__line .humburger__line_first,
-._active > .humburger__line .humburger__line_fourth {
+._active > .humburger__line_first,
+._active > .humburger__line_fourth {
   display: none;
+}
+
+._active > .humburger__line_second {
+  top: 50%;
+  transform: rotate(-45deg);
+  transition-delay: 0s, 0.3s;
+}
+
+._active > .humburger__line_third {
+  bottom: 50%;
+  transform: rotate(45deg);
+  transition-delay: 0s, 0.3s;
 }
 
 .ico:hover {
@@ -936,7 +945,7 @@ section {
   display: flex;
   align-content: center;
   justify-content: center;
-  padding: 3px 33px;
+  padding: 4px 34px;
   cursor: pointer;
 }
 .button_colored {

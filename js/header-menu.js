@@ -8,19 +8,11 @@ let overlay = document.querySelector('.about-me');
 
 function burgerMenu(selector) { 
 	humburger.addEventListener("click", (e) => {
-		console.log(e);
-		e.preventDefault();
-		animateBurger();
-		hideContent();
-		showNavigation();
-		hideNavigation();
+	humburger.classList.toggle('_active');
+	e.preventDefault();
+	hideContent();
+	showNavigation();
 	});
-
-	function animateBurger() { 
-		humburger.addEventListener("click", () => {
-			humburger.classList.toggle('_active');
-		});		
-	}
 
 	function hideContent() { 
 		navMobile.classList.toggle('_active');
@@ -37,15 +29,6 @@ function burgerMenu(selector) {
 		} else { 
 			navMobile.style.visibility = "hidden";
 		}
-	}
-	
-
-	function hideNavigation() { 
-		overlay.addEventListener("click", () => {
-			navMobile.style.visibility = "hidden";
-			aboutContent.style.visibility = "visible";
-			// hideContent();
-		});
 	}
 }
 
