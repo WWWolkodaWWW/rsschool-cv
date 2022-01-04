@@ -53,9 +53,21 @@
 	}
 }
 
-._active > .humburger__line .humburger__line_first,
-._active > .humburger__line .humburger__line_fourth {
+._active > .humburger__line_first,
+._active > .humburger__line_fourth {
 	display: none;
+}
+
+._active > .humburger__line_second {
+	top: 50%;
+	transform: rotate(-45deg);
+	transition-delay: 0s, 0.3s;
+}
+
+._active > .humburger__line_third {
+	bottom: 50%;
+	transform: rotate(45deg);
+	transition-delay: 0s, 0.3s;
 }
 
 .ico {
