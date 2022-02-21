@@ -1,8 +1,6 @@
 .header-navigation {
 	&__list {
-		@media screen and (min-width: 1025px) {
-			visibility: visible;
-		}
+		
 		display: flex;
 		@include font($size: 2rem, $weight: 300, $space: 0.2rem);
 
@@ -74,7 +72,3 @@
 		transition: 0.3s all linear;
 	}
 }
-
-// .active {
-// 	visibility: visible;
-// }
